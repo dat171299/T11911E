@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript" >
+    var lg_str = "hellobaby123456";
+    var sm_str = "hello";
+
+    function check(lg,sm) {
+        for(var i=0;i<lg.length;i++){
+            var sub_str = lg.substring(i,sm.length);
+            if(sub_str == sm)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    if(check(lg_str,sm_str))
+    {
+        console.log(lg_str+"chua chuoi"+sm_str);
+    }
+    else{
+        console.log(lg_str+"khong chua chuoi"+sm_str);
+    }
+</script>
+</body>
+</html>
